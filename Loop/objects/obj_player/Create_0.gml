@@ -6,7 +6,6 @@ isidle = true;
 isfall = false;
 
 spd = 3;
-hspd = (keyboard_check(vk_right) - keyboard_check(vk_left)) * spd;
 grav = 0.2;
 spdfall = 2;
 maxspeedfall = 6;
