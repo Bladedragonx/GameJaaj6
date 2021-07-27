@@ -4,5 +4,5 @@
 //Move Player
 
 Move_Player(spd);
-Jump_Player()
+Jump_Player();
 PushObjetcs();
