@@ -4,9 +4,10 @@ function Move_Player(spd_pl){
 	if(keyboard_check(vk_right) && place_free(x+spd_pl, y))
 	{
 		x+=spd_pl;
-	}
-	else if(keyboard_check(vk_left) && place_free(x-spd_pl, y))
+		facing = 1;
+	}else if(keyboard_check(vk_left) && place_free(x-spd_pl, y))
 	{
+		facing = -1;
 		x-=spd_pl;
 	}
 
