@@ -7,6 +7,20 @@ function Jump_Player(){
 	if(keyboard_check(vk_space)){
 		if(!place_free(x, y+1)){
 			isjumping = true;
+			if(place_meeting(x+1, y, obj_box)){
+				var block = instance_place(x+1, y, obj_box);
+				with(block){
+					Move_obj(2);
+				}
+			}
+	
+			//mover objetos para a esquerda
+			if(place_meeting(x-1, y, obj_box)){
+				var block = instance_place(x-1, y, obj_box);
+				with(block){
+					Move_obj(2);
+				}
+			}
 		}
 	}
 	

@@ -2,17 +2,21 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function PushObjetcs(){
 	//mover objetos para direita
-	if(place_meeting(x+spd, y, obj_box) && isjumping == false && isfall == false){
-		var block = instance_place(x+spd, y, obj_box);
-		with(block){
+	if(obj_player.y >= obj_box.y){
+		if(place_meeting(x+spd, y, obj_box) && isjumping == false && isfall == false){
+			var block = instance_place(x+spd, y, obj_box);
+			with(block){
+				Move_obj(obj_player.spd/2);
+			}
 			Move_obj(obj_player.spd/2);
 		}
-	}
 	
-	//mover objetos para a esquerda
-	if(place_meeting(x-spd, y, obj_box) && isjumping == false && isfall == false){
-		var block = instance_place(x-spd, y, obj_box);
-		with(block){
+		//mover objetos para a esquerda
+		if(place_meeting(x-spd, y, obj_box) && isjumping == false && isfall == false){
+			var block = instance_place(x-spd, y, obj_box);
+			with(block){
+				Move_obj(obj_player.spd/2);
+			}
 			Move_obj(obj_player.spd/2);
 		}
 	}

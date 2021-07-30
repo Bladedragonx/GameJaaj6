@@ -9,13 +9,12 @@ PushObjetcs();
 
 
 if(!isjumping){
-	if(keyboard_check(vk_nokey)){
+	if(!keyboard_check(vk_right) && !keyboard_check(vk_left) && !keyboard_check(vk_space)){
 		sprite_index = spr_Player_Idle;
 	}
 	else{
-		if(!place_free(x+spd, y) || !place_free(x-spd, y))
+		if(place_meeting(x+spd, y, obj_box) || place_meeting(x-spd, y, obj_box))
 		{
-			show_debug_message("empurrando")
 			image_speed = (spd/2);
 			if(sprite_index != spr_Player_Pushend){
 				image_index = 0;	

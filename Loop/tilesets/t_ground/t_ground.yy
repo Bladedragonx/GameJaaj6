@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite3",
-    "path": "sprites/Sprite3/Sprite3.yy",
+    "name": "spr_tileset",
+    "path": "sprites/spr_tileset/spr_tileset.yy",
   },
   "tileWidth": 16,
   "tileHeight": 17,
