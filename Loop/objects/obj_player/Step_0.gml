@@ -34,3 +34,9 @@ if(!isjumping){
 		sprite_index = spr_Player_JumpStart;
 	}
 }
+
+if(keyboard_check_pressed(ord("R"))){
+	x = xstart;
+	y = ystart;
+	obj_box.timereset = 0;
+}

@@ -18,5 +18,3 @@ else
 surface_resize(application_surface, ww, hh);
 
 window_center();
-
-finish = true;

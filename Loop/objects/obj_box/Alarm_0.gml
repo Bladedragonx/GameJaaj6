@@ -12,5 +12,23 @@ if(timereset == 0){
 	timereset = 30;
 }
 
+switch(room){
+	case Room1:
+		global.pointsroom1 = points;
+		break;
+	case Room2:
+		global.pointsroom2= points;
+		break;
+	case Room3:
+		global.pointsroom3= points;
+		break;
+	case Room4:
+		global.pointsroom4= points;
+		break;
+	case Room5:
+		global.pointsroom5= points;
+		break;
+}
 timereset--;
+points++;
 alarm[0] = 60;

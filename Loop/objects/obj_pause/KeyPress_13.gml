@@ -2,5 +2,6 @@
 // You can write your code in this editor
 
 if(global_pause){
-	room_goto_previous();
+	audio_stop_all();
+	room_goto(Room0);
 }

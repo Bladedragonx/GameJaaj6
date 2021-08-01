@@ -5,3 +5,5 @@ timereset = 30;
 maxtime = 30;
 
 alarm[0] = 60;
+
+points = 0;

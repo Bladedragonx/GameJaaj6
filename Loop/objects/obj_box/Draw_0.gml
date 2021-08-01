@@ -5,7 +5,7 @@ draw_self();
 draw_set_font(fnt_ui);
 
 draw_set_color(c_white);
-draw_text(room_width/2,20,"Time: "+ string(timereset));
+draw_text(room_width-200,20,"Time: "+ string(points));
 
 draw_set_color(c_blue);
 var barWith;

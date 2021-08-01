@@ -10,9 +10,6 @@ if(obj_menu.visible){
 			show_debug_message("abrindo menu de seleção");
 			if(obj_SelectStage.visible){
 				obj_SelectStage.visible = false;
-			}else{
-				obj_SelectStage.visible = true;
-				obj_menu.visible = false;
 			}
 			obj_SelectStage.visible = true;
 			obj_menu.visible = false;
@@ -20,7 +17,7 @@ if(obj_menu.visible){
 			last_selected = 0;
 			break;
 		case 2:
-			game_end();
+			room_goto(Credits);
 			break;
 	}
 }
