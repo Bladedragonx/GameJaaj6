@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 if(place_free(x, y+spdfall))
 {
 	y+=spdfall;
@@ -10,4 +11,7 @@ if(place_free(x, y+spdfall))
 	}
 }else{
 	spdfall = 2;
+	while(place_free(x, y+1)){
+		y++;
+	}
 }

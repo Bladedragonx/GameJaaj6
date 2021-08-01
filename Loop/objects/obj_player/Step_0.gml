@@ -7,7 +7,6 @@ Move_Player(spd);
 Jump_Player();
 PushObjetcs();
 
-
 if(!isjumping){
 	if(!keyboard_check(vk_right) && !keyboard_check(vk_left) && !keyboard_check(vk_space)){
 		sprite_index = spr_Player_Idle;
@@ -23,7 +22,7 @@ if(!isjumping){
 		}else{
 			if(place_free(x+spd, y) || place_free(x-spd, y)){
 				if(sprite_index != spr_Player_walk) image_index = 0;
-				sprite_index = spr_Player_walk;
+					sprite_index = spr_Player_walk;
 			}
 		}
 		

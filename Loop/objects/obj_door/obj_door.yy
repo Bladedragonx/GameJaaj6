@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Objects Scene",
+    "path": "folders/Objects/Objects Scene.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_door",

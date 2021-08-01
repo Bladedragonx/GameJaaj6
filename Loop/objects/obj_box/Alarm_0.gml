@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 if(timereset == 0){
 	if(place_meeting(xstart, ystart, obj_player)){
 		obj_player.x = obj_player.xstart;
