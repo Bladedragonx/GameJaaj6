@@ -1,9 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(keyboard_check(ord("F")) && place_meeting(x, y, obj_player)){
+if(place_meeting(x, y, obj_player)){
 	if(room == Room1){
-		show_debug_message("sainda da fase 1");
 		global.finished2 = true;
 		room_goto_next();
 	}else if(room == Room2){
@@ -16,6 +15,7 @@ if(keyboard_check(ord("F")) && place_meeting(x, y, obj_player)){
 		room_goto_next();
 		global.finished5 = true;
 	}else if(room == Room5){
+		audio_stop_sound(snd_ambient);
 		room_goto(Credits)
 	}
 }
